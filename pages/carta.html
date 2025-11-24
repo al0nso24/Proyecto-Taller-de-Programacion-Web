@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta</title>
+    <link rel="icon" href="../images/Trifuerza.svg.png">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <!--HEADER  -->
+
+    <header class="hero">
+        <nav class="nav-container">
+            <a href="../index.html" class="logotipo-enlace">
+                <div class="logotipo">
+                    <img src="../images/tri.png" alt="logo del restaurante" class="logo-eclat">
+                </div>
+            </a>
+            <ul class="nav-opciones">
+                <li class="nav-opcion">
+                    <a href="../index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-opcion">
+                    <a href="../index.html#nuestra-historia" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-opcion">
+                    <a href="../pages/carta.html" class="nav-link">Carta</a>
+                </li>
+                <li class="nav-opcion">
+                    <a href="../pages/reservaciones.html" class="nav-link">Reservaciones</a>
+                </li>
+                <li class="nav-opcion">
+                    <a href="../pages/contactanos.html" class="nav-link">Contactanos</a>
+                </li>
+            </ul>
+            <div class="registro">
+                <button class="button-login"><svg class="icono-login" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M6 8a.5.5 0 0 1 .5-.5h4.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L11.293 8.5H6.5A.5.5 0 0 1 6 8z"/>
+                    <path d="M13 2.5A1.5 1.5 0 0 0 11.5 1h-9A1.5 1.5 0 0 0 1 2.5v11A1.5 1.5 0 0 0 2.5 15h9a1.5 1.5 0 0 0 1.5-1.5v-11zM2.5 2h9a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5z"/>
+                </svg>Ingresar</button>
+            </div>
+  
+                <!--aqui va el modal no lo borren-->
+            <div class="modal" id="modal-ingresar">
+                <div class="modal-contenido">
+                    <button class="cerrar-modal">&times;</button>
+                    <img src="../images/tri.png" alt="imagen-ingreso" class="imagen-ingreso">
+                    <h2 class="iniciar-sesion">Iniciar Sesion</h2>
+                    <form id="formulario-login">
+                        <div class="grupos">
+                            <div class="grupo-1">
+                                <label class="usuario-label" for="usuario">Usuario: </label>
+                                <input class="usuario"type="text" id="usuario" name="usuario" required>
+                            </div>
+                            <div class="grupo-2">
+                                <label class="contraseña-label" for="contraseña"><br>Contraseña: </label>
+                                <input class="contraseña" type="password" id="contraseña" name="contraseña" required>
+                            </div>
+                        </div>
+                        <div class="boton">
+                            <button class= "button-wa" type="submit">Ingresar</button>
+                        </div>
+                        <div class="botones">
+                            <button class="olvido" type="submit">¿Has olvidado tu contraseña?</button>
+                            <h1 class="division">/</h1>
+                            <button class="crear" type="submit">Registrarse en el sitio</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!--Inicio del menu -->
+    <main>
+    <div class="titulo-imagen-container">
+        <img src="../images/carta1.webp" class="imagen-titulo" />
+        <h2 class="titulo-carta">CEVICHES</h2>
+    </div>
+    <section class="ceviches">
+        <div class="ceviche">
+            <div class="fila-plato">
+              <h3 class="nombre">Ceviche de pescado</h3>
+              <p class="precio">S/. 50.00</p>
+            </div>
+            <p class="descripcion">Trozos de pescado frescos curtidos con limón y sal al estilo natural, acompañado con camote glaseado y choclo cocido con un toque de anís.</p>
+          </div>
+        
+          <div class="ceviche">
+            <div class="fila-plato">
+              <h3 class="nombre">Ceviche de Salmón</h3>
+              <p class="precio">S/. 60.00</p>
+            </div>
+            <p class="descripcion">Trozos de salmón fresco curtidos con limón y sal al estilo natural, acompañado con camote glaseado y choclo cocido con un toque de anís.</p>
+          </div>
+        
+          <div class="ceviche">
+            <div class="fila-plato">
+              <h3 class="nombre">Ceviche Mixto</h3>
+              <p class="precio">S/. 50.00</p>
+            </div>
+            <p class="descripcion">Trozos de pescado frescos con mariscos seleccionados (calamar, pulpo, camarón) curtidos con limón y sal al estilo natural acompañados con camote glaseado y choclo cocido con toque de anís.</p>
+          </div>
+        
+          <div class="ceviche">
+            <div class="fila-plato">
+              <h3 class="nombre">Ceviche Salmón Mixto</h3>
+              <p class="precio">S/. 55.00</p>
+            </div>
+            <p class="descripcion">Trozos de salmón fresco con mariscos seleccionados (calamar, pulpo, camarón) curtidos con limón y sal al estilo natural acompañados con camote glaseado y choclo cocido con toque de anís.</p>
+          </div>
+        
+          <div class="ceviche">
+            <div class="fila-plato">
+              <h3 class="nombre">Ceviche Carretillero</h3>
+              <p class="precio">S/. 45.00</p>
+            </div>
+            <p class="descripcion">Trozos de pescado fresco curtidos con limón y sal al estilo natural, acompañado con chicharrón de calamar.</p>
+          </div>
+        
+          <div class="ceviche">
+            <div class="fila-plato">
+              <h3 class="nombre">Ceviche Oriental</h3>
+              <p class="precio">S/. 30.00</p>
+            </div>
+            <p class="descripcion">Láminas de pescado curtidos con limón y sal a base de una salsa NIKKEI (salsa de soya, salsa mensi y salsa de ostra), acompañado con camote glaseado, coronado con cebolla china y semilla de sésamo.</p>
+          </div>
+        
+          <div class="ceviche">
+            <div class="fila-plato">
+              <h3 class="nombre">Tiradito de ají amarillo</h3>
+              <p class="precio">S/. 50.00</p>
+            </div>
+            <p class="descripcion">Finas tiras de pescado curtido con limón y sal, bañado en una salsa de ají amarillo cevichera, acompañado con camote glaseado y choclo peruano.</p>
+          </div>
+    </section>
+    
+    <div class="titulo-imagen-container">
+        <img src="../images/carta2.jpg" class="imagen-titulo" />
+        <h2 class="titulo-carta">PLATOS DE AUTOR</h2>
+    </div>
+
+    <section class="platos-autor">
+        <div class="plato">
+          <div class="fila-plato">
+            <h3 class="nombre">Lomo al tinto con zapallo al estilo andino</h3>
+            <p class="precio">S/. 70.00</p>
+          </div>
+          <p class="descripcion">Corte de filete grillado con puré de zapallo artesanal, bañado en Salsa de Vino Tinto y espárragos salteados.</p>
+        </div>
+      
+        <div class="plato">
+          <div class="fila-plato">
+            <h3 class="nombre">Salmón rosado sobre mar negro</h3>
+            <p class="precio">S/. 65.00</p>
+          </div>
+          <p class="descripcion">Risotto de tinta de calamar con salmón grillado con vino blanco y mantequilla con salsa de rose.</p>
+        </div>
+      
+        <div class="plato">
+          <div class="fila-plato">
+            <h3 class="nombre">Sinfonía de Pulpo en Su Salteado Perfecto</h3>
+            <p class="precio">S/. 59.00</p>
+          </div>
+          <p class="descripcion">Pulpo salteado al estilo peruano con papas al ajillo.</p>
+        </div>
+      
+        <div class="plato">
+          <div class="fila-plato">
+            <h3 class="nombre">Ostiónes en Perfume de cilantro</h3>
+            <p class="precio">S/. 79.00</p>
+          </div>
+          <p class="descripcion">Tiradito de ostiones en salsa de ají amarillo, con palta y camote grillados con un toque de aceite de cilantro.</p>
+        </div>
+      
+        <div class="plato">
+          <div class="fila-plato">
+            <h3 class="nombre">Mar de fuego</h3>
+            <p class="precio">S/. 80.00</p>
+          </div>
+          <p class="descripcion">Preparación de ceviche caliente de camarones con toque ahumado con camote y choclo grillados.</p>
+        </div>
+    </section>
+      
+
+    <div class="titulo-imagen-container">
+        <img src="../images/carta3.webp"  class="imagen-titulo" />
+        <h2 class="titulo-carta">PLATOS CRIOLLOS</h2>
+    </div>
+
+    <section class="platos-criollos">
+        <div class="plato-crio">
+          <div class="fila-plato">
+            <h3 class="nombre">Ají de gallina</h3>
+            <p class="precio">S/. 80.00</p>
+          </div>
+          <p class="descripcion">Base de crema de ají amarillo con pollo deshilachado, acompañado con papa cocida, huevo y porción de arroz.</p>
+        </div>
+      
+        <div class="plato-crio">
+          <div class="fila-plato">
+            <h3 class="nombre">Arroz con mariscos</h3>
+            <p class="precio">S/. 80.00</p>
+          </div>
+          <p class="descripcion">Arroz graneado con mariscos seleccionados (calamar, pulpo, camarón), salteado con mantequilla y vino blanco, base de salsa roja al estilo natural con un toque de cilantro.</p>
+        </div>
+      
+        <div class="plato-crio">
+          <div class="fila-plato">
+            <h3 class="nombre">Lomo saltado</h3>
+            <p class="precio">S/. 85.00</p>
+          </div>
+          <p class="descripcion">Carne de lomo liso de 200gr salteado con cebolla morada, tomate y un toque de cilantro, acompañado de papas rústica y una porción de arroz.</p>
+        </div>
+      
+        <div class="plato-crio">
+          <div class="fila-plato">
+            <h3 class="nombre">Seco de Asado de Tira</h3>
+            <p class="precio">S/. 60.00</p>
+          </div>
+          <p class="descripcion">Guisado de asado de tira macerado con chicha de jora y cerveza negra, acompañado con yuca y guarnición de arroz.</p>
+        </div>
+      
+        <div class="plato-crio">
+          <div class="fila-plato">
+            <h3 class="nombre">Chicharrón de pollo</h3>
+            <p class="precio">S/. 70.00</p>
+          </div>
+          <p class="descripcion">Trozos de pollo marinado por huevo y harina acompañado con salsa criolla.</p>
+        </div>
+      
+        <div class="plato-crio">
+          <div class="fila-plato">
+            <h3 class="nombre">Chicharrón de pescado</h3>
+            <p class="precio">S/. 60.00</p>
+          </div>
+          <p class="descripcion">Trozos de pescado marinado por huevo y harina acompañado con salsa criolla.</p>
+        </div>
+      
+        <div class="plato-crio">
+          <div class="fila-plato">
+            <h3 class="nombre">Paella Criolla</h3>
+            <p class="precio">S/. 90.00</p>
+          </div>
+          <p class="descripcion">Arroz graneado con pollo, carne, camarón, choricillo y almeja, con especies peruanas y un toque de azafrán.</p>
+        </div>
+      
+        <div class="plato-crio">
+          <div class="fila-plato">
+            <h3 class="nombre">Fettuccine al pesto con lomo a la parrilla</h3>
+            <p class="precio">S/. 50.00</p>
+          </div>
+          <p class="descripcion">Fettuccine bañados con salsa al pesto acompañado con un lomo de 200gr. a la parrilla, con salsa de chimichurri y champiñón.</p>
+        </div>
+      
+        <div class="plato-crio">
+          <div class="fila-plato">
+            <h3 class="nombre">Tallarín saltado tres sabores</h3>
+            <p class="precio">S/. 60.00</p>
+          </div>
+          <p class="descripcion">Trozos de pollo, carne y camarón salteados con cebolla morada, tomate, cebollín al jugo con un toque de cilantro mezclados con fideos espaguetis.</p>
+        </div>
+      
+        <div class="plato-crio">
+          <div class="fila-plato">
+            <h3 class="nombre">Tallarín saltado de carne</h3>
+            <p class="precio">S/. 65.00</p>
+          </div>
+          <p class="descripcion">Trozos de carne de lomo liso 160gr salteados con cebolla morada, tomate, cebollín al jugo con un toque de cilantro mezclados con fideos espaguetis.</p>
+        </div>
+      
+        <div class="plato-crio">
+          <div class="fila-plato">
+            <h3 class="nombre">Tallarín saltado de pollo</h3>
+            <p class="precio">S/. 50.00</p>
+          </div>
+          <p class="descripcion">Trozos de pollo salteados con cebolla morada, tomate, cebollín al jugo con un toque de cilantro mezclados con fideos espaguetis.</p>
+        </div>
+    </section>
+
+    <div id="ir-arriba">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" viewBox="0 0 24 24">
+        <path d="M12 2L5 9h4v9h6V9h4z"/>
+      </svg>
+    </div>
+
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+      <div class="footer-content">
+          <p>&copy; 2025 Restaurante Éclat. Todos los derechos reservados.</p>
+      </div>
+  </footer>
+
+
+    <script src="../js/modal-mostrar.js"></script>
+    <script src="../js/acciones.js"></script>
+    <script src="../js/ir-arriba.js"></script>
+</body>
+</html>

@@ -1,0 +1,1103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+    overflow-x: hidden;  
+    
+}
+
+img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+/************** Navegador *********************************/
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(14, 13, 13);
+  padding: 0 20px;
+  height: 130px;
+}
+
+.nav-opciones {
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    display: flex;
+    justify-content:space-between;   
+    font-size: 20px;
+    text-decoration: none;
+    width: 100%;  
+    padding: 10px 20px;
+}
+.nav-opciones li a:hover {
+
+  transform: translateY(-5px); 
+}
+
+.icono-login {
+    width: 45px; 
+    height: 45px;
+    margin-right: 10px; 
+}
+
+.button-login {
+  display: flex;
+  align-items:center;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 15px;
+  padding: 10px 25px;
+}
+
+.button-login:hover {
+    color: rgb(216, 174, 20);
+    transform: translateY(-5px) scale(1.01);
+}
+
+.nav-link {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: rgb(216, 174, 20);
+}
+
+.registro {
+    display: flex;
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.logo-eclat {
+  width: 125px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/************** modal "invisible" *********************************/
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    display: flex; 
+}
+
+.modal.mostrar { 
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-contenido {
+    transform: scale(0.8);
+    background: rgb(14, 13, 13);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(14, 13, 13);
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    text-align: center;
+}
+
+.modal.mostrar .modal-contenido {
+    transform: scale(1);
+}
+
+
+.modal-contenido {
+    background: rgb(14, 13, 13); 
+    padding: 40px;
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgb(14, 13, 13); 
+    max-width: 800px; 
+    height: 600px;
+    width: 90%; 
+    text-align: center; 
+    position: relative; 
+}
+
+
+.imagen-ingreso {
+    width: 155px;
+    height: 120px;
+}
+
+.cerrar-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.iniciar-sesion {
+    padding: 10px;
+    font-size: 30px;
+    color: rgb(240, 240, 227);
+}
+
+.grupo-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 30px;
+    gap: 17px;
+}
+
+.grupo-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 20px;
+    gap: 15px;
+    margin-top: -50px; 
+    margin-left: 2px;
+    margin-bottom: 0px;
+}
+
+
+
+.usuario, .contraseña {
+    flex: 1;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.usuario-label, .contraseña-label {
+    width: 180px; 
+    color: #ffffff;
+    font-size: 25px;
+    text-align: right;
+}
+
+input.usuario,
+input.contraseña {
+    width: 100%; 
+    max-width: 300px; 
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+
+
+.usuario-label{
+    padding-left:66px;
+}
+
+.contraseña {
+    margin-top: 45px; 
+}
+
+.grupos {
+    margin-top: 10px;
+}
+
+.boton {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    justify-content: center; 
+}
+
+.button-wa {
+  background-color: #216824;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.button-wa:hover {
+    background-color: #45a049;
+}
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+
+.botones {
+    display: flex;
+    margin-top: 20px;
+    gap: 2.5em;
+    justify-content: center; 
+}
+
+.olvido {
+  background-color: #811710;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.olvido:hover {
+    background-color: #aa2c23;
+}
+
+.division {
+    color: azure;
+    font-size: 50px;
+}
+
+.crear {
+  background-color:#216824;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.crear:hover {
+    background-color: #45a049;
+}
+
+/************** Navegador (solo que empezamos muy desordenado) *********************************/
+
+.control-header{
+    position: relative;
+    width: 100%;
+    height: 810px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.heroe {
+    position: relative;
+    width: 100%;
+    height: 810px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroe-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.heroe-contenedor {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 0 40px; 
+}
+
+
+.heroe-contenido {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 5em; 
+    height: 80vh; 
+}
+
+.heroe-izquierda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    height: 100%; 
+    padding-left: 0em; 
+}
+
+.heroe::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%; 
+    background: linear-gradient(to bottom, 
+    rgba(0, 0, 0, 0) 0%, 
+    rgba(0, 0, 0, 0.7) 40%, 
+    rgb(14, 13, 13) 80%
+);
+    z-index: 1;
+}
+
+.heroe {
+  position: relative;
+  width: 100%;
+  max-width: 2400px;
+  max-height: 1200px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.heroe-slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.heroe-slider img {
+  transform: scale(2.1); 
+  transform-origin: center center; 
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/**************Pantalla con imagenes diferentes que no usara javascript :3*********************************/
+
+#slide1:checked ~ .heroe-slider .slide1 {
+  display: block;
+}
+#slide2:checked ~ .heroe-slider .slide2 {
+  display: block;
+}
+#slide3:checked ~ .heroe-slider .slide3 {
+  display: block;
+}
+
+/******************** Mostrara las flechas según la imagen que se este viendo(osea que va a rotar)***********/
+
+#slide1:checked ~ label.flecha-izquierda[for="slide3"],
+#slide1:checked ~ label.flecha-derecha[for="slide2"] {
+  display: block;
+}
+
+#slide2:checked ~ label.flecha-izquierda[for="slide1"],
+#slide2:checked ~ label.flecha-derecha[for="slide3"] {
+  display: block;
+}
+
+#slide3:checked ~ label.flecha-izquierda[for="slide2"],
+#slide3:checked ~ label.flecha-derecha[for="slide1"] {
+  display: block;
+}
+
+
+.boton-menu {
+    padding: 10px 30px;
+    margin-top: 10px;
+    font-size: 1.85em;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    background-color: rgb(14, 13, 13);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 185px;
+    transition: background-color 0.4s ease;
+    text-decoration: none;
+    display: inline-block; 
+    margin-left: 55px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.boton-menu:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ececec;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1); 
+}
+
+.redireccion-menu {
+    padding: 0px 0px 0px 290px;
+    margin-left: 130px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.heroe-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 2em; 
+}
+
+.lema {
+    padding: 0px 0px 0px 70px;
+    color: #ffffff;
+    box-shadow: #000000;
+}
+
+.lema-contenido {
+    color: #ffffff;
+    font-size: 2.3rem; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1); 
+}
+
+.fundador img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -120px;
+    margin-left: 390px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.heroe-derecha {
+    position: relative;
+    width: 300px; 
+    height: 500px; 
+    display: flex;
+    justify-content: center;
+}
+
+.imagen {
+    position: absolute;
+    width: 180px;
+    height: 220px;
+    background: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imagen-menu-1 {
+    margin-left: -200px;
+    margin-top: -100px;
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+    border-radius: 30px;
+}
+
+.imagen-menu-2 {
+    top: 50px; 
+    left: 100px; 
+    z-index: 2; 
+    margin-left: -300px;
+    width: 480px;
+    height: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+    border-radius: 30px;
+}
+
+.heroe-derecha img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.enlace {
+    background-color: #0e0d0d;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .enlace-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+  }
+  
+  .flecha-izquierda, .flecha-derecha {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .boton-flecha {
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor:rgb(0, 0, 0)ter;
+    transition: transform 0.3s ease;
+  }
+  
+  .boton-flecha:hover {
+    transform: scale(1.2);
+  }
+  
+  /***************************Animacion de cambio de imagenes****************************************/
+
+  .flecha-izquierda, .flecha-derecha {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+  }
+
+  /* Posición */
+  .flecha-izquierda {
+    left: 15px;
+    transition: transform 0.3s ease;
+  }
+
+  .flecha-izquierda:hover {
+    transform: scale(1.5);
+  }
+
+  .flecha-derecha {
+    right: 25px;
+    transition: transform 0.3s ease;
+  }
+
+  .flecha-derecha:hover {
+    transform: scale(1.5);
+    right: 25px
+  }
+
+
+  .critica, .critica-activa {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    width: 500px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+  
+  .critica-activa {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    position: relative;
+  }
+  
+  .critica-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .critica-contenido-imagen img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+  }
+  
+  .critica-opinion {
+    flex: 1;
+  }
+  
+  .contenido-opinion {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  /** BODY EDUARDO - ALONSO **************************************************************************/
+
+#nuestra-historia h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: goldenrod;
+}
+
+#nuestra-historia p {
+    font-size: 26px;
+    line-height: 1.8;
+    color: black;
+}
+
+#parrafo_body_1, #parrafo_body_2 {
+    width: 50%;
+    padding: 20px;
+}
+
+#img_body_1, #img_body_2 {
+    width: 50%;
+    padding: 20px;
+}
+
+#img_body_1 img,
+#img_body_2 img {
+    width: 100%;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    object-fit: cover;
+    padding: 10px 1%;
+}
+
+  /*Fadia*/
+
+  footer {
+    background-color: #111;
+    color: goldenrod;
+    text-align: center;
+    padding: 20px 10px;
+    border-top: 2px solid goldenrod;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+ .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    height: 50vh;
+    padding-bottom: 0px;
+}
+.left-contactanos, .right-contactanos {
+    width: 45%;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.left-contactanos{
+    justify-content: center;
+}
+
+.footer-social-container {
+    margin: 0px;
+}
+
+h2, h3 {
+    color: goldenrod;
+}
+.underline {
+    width: 100px;
+    height: 3px;
+    background: goldenrod;
+    margin: 10px 0 30px 0;
+}
+.contact-info i, .social-icons i {
+    color: goldenrod;
+}
+.contact-info p {
+    margin: 10px 0;
+}
+.form input, .form textarea {
+    width: 100%;
+    background: #111;
+    border: 1px solid goldenrod;
+    color: goldenrod;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.form button {
+    background: goldenrod;
+    border: none;
+    color: #000;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#ir-arriba {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: rgb(213, 193, 80);
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+}
+
+#ir-arriba.show {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+#ir-arriba svg {
+  display: block;
+}
+
+  
+/**************Inicio de la carta-yarumy***********/
+
+.titulo-carta {
+    text-align: center;
+    color: #ffffff; 
+    font-size: 50px;                 
+    font-family: 'Arial', sans-serif;   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fila-plato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #cda40f;
+}
+
+.platos-criollos, .ceviches, .platos-autor {
+    max-width: 1100px;   
+    margin: auto;    
+}
+
+.precio, .nombre {
+    font-weight: bold;
+    font-size: x-large;
+    color: #cda40f;
+}
+
+.descripcion {
+    margin-bottom: 15px;
+}
+
+.imagen-titulo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+    opacity: 0.7;
+}
+
+.titulo-imagen-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;    
+    height: 220px;  
+    margin-bottom: 30px; 
+}
+
+.footer-social {
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.footer__icons {
+    width: 36px;
+    height: 36px;
+}
+
+.footer-img {
+    width: 150px;
+    height: auto;
+    border: none;
+}
+
+.footer-img-ig {
+    width: 150px;
+    height: auto;
+    border: none;
+    margin-top: -50px;
+}
+
+.footer-social a {
+  text-decoration: none; 
+}
+
+
+
+/*** RESERVACIONES - EDUARDO *******************************************************************************/
+#reserva-background {
+    background-color: #000000;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+#reserva-bienvenida {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0 0 16px 16px;
+    padding: 40px 20px;
+    margin: 0 auto 30px;
+    width: 80%;
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.15);
+}
+
+.reserva-titulo h1 {
+    font-size: 2.5rem;            
+    font-weight: 700;             
+    color: #d4af37;               
+    margin-bottom: 10px;
+    letter-spacing: 2px;          
+    text-transform: uppercase;    
+    font-family: 'Georgia', serif; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
+    text-align: center;
+}
+
+#btn-reserva {
+    padding: 12px 28px;
+    background-color: #d4af37;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#btn-reserva:hover {
+    background-color: #c19e2f;
+}
+
+#reserva-form {
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0 0 16px 16px;
+    padding: 40px 20px;
+    margin: 0 auto 30px;
+    width: 80%;
+    gap: 24px;
+    color: #ffffff;
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.05);
+}
+
+#reserva-content-2 {
+    margin-bottom: 30px;
+}
+
+#num-per {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.num-persona {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border: 1px solid #d4af37;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.num-persona:hover,
+.num-persona.selected {
+    background-color: #d4af37;
+    color: #000000;
+}
+
+.reserva-content-3 {
+    margin-bottom: 24px;
+    text-align: left;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.input-reserva {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border: 1px solid #555;
+    border-radius: 6px;
+    padding: 10px;
+    width: 100%;
+    font-size: 0.95rem;
+}
+
+#btn-reserva-2 {
+    padding: 12px 28px;
+    background-color: #d4af37;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-reserva-2:hover {
+    background-color: #c19e2f;
+}
+
+#reserva-form label {
+    color: #d4af37;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+    text-align: left;
+}
+
+#reserva-final {
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0 0 16px 16px;
+    padding: 40px 20px;
+    margin: 0 auto 30px;
+    width: 80%;
+    gap: 24px;
+    color: #ffffff;
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.05);
+}
+
+.reserva-titulo-2 h2 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+}
+
+.reserva-content-4-1 {
+    margin-bottom: 24px;
+    text-align: left;
+    width: 90%;
+    margin-inline: auto;
+}
+
+#reserva-motivo,
+#Mensaje {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border: 1px solid #555;
+    border-radius: 6px;
+    padding: 10px;
+    width: 100%;
+    font-size: 0.95rem;
+}
+
+#info {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+#reserva-final label {
+    color: #d4af37;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+    text-align: left;
+}
+
+#reserva-final input[type="submit"] {
+    padding: 12px 28px;
+    background-color: #d4af37;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reserva-final input[type="submit"]:hover {
+    background-color: #c19e2f;
+}
+
+#reserva-resumen {
+    background-color: #2c2c2c;
+    border: 1px solid #d4af37;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    margin: 20px auto;
+    text-align: left;
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+#reserva-resumen h3 {
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+
+/****************************************************************************/
+

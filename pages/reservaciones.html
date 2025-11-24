@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/Trifuerza.svg.png">
+    <title>Reservaciones</title>
+    <link rel="icon" type="image/png" href="images/logo.jpg">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <!--HEADER  -->
+    <header class="hero">
+      <nav class="nav-container">
+          <a href="../index.html" class="logotipo-enlace">
+              <div class="logotipo">
+                  <img src="../images/tri.png" alt="logo del restaurante" class="logo-eclat">
+              </div>
+          </a>
+          <ul class="nav-opciones">
+              <li class="nav-opcion">
+                  <a href="../index.html" class="nav-link">Inicio</a>
+              </li>
+              <li class="nav-opcion">
+                  <a href="../index.html#nuestra-historia" class="nav-link">Nosotros</a>
+              </li>
+              <li class="nav-opcion">
+                  <a href="../pages/carta.html" class="nav-link">Carta</a>
+              </li>
+              <li class="nav-opcion">
+                  <a href="../pages/reservaciones.html" class="nav-link">Reservaciones</a>
+              </li>
+              <li class="nav-opcion">
+                  <a href="../pages/contactanos.html" class="nav-link">Contactanos</a>
+              </li>
+          </ul>
+          <div class="registro">
+              <button class="button-login"><svg class="icono-login" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M6 8a.5.5 0 0 1 .5-.5h4.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L11.293 8.5H6.5A.5.5 0 0 1 6 8z"/>
+                  <path d="M13 2.5A1.5 1.5 0 0 0 11.5 1h-9A1.5 1.5 0 0 0 1 2.5v11A1.5 1.5 0 0 0 2.5 15h9a1.5 1.5 0 0 0 1.5-1.5v-11zM2.5 2h9a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5z"/>
+              </svg>Ingresar</button>
+          </div>
+
+              <!--aqui va el modal no lo borren-->
+          <div class="modal" id="modal-ingresar">
+              <div class="modal-contenido">
+                  <button class="cerrar-modal">&times;</button>
+                  <img src="../images/tri.png" alt="imagen-ingreso" class="imagen-ingreso">
+                  <h2 class="iniciar-sesion">Iniciar Sesion</h2>
+                  <form id="formulario-login">
+                      <div class="grupos">
+                          <div class="grupo-1">
+                              <label class="usuario-label" for="usuario">Usuario: </label>
+                              <input class="usuario"type="text" id="usuario" name="usuario" required>
+                          </div>
+                          <div class="grupo-2">
+                              <label class="contraseña-label" for="contraseña"><br>Contraseña: </label>
+                              <input class="contraseña" type="password" id="contraseña" name="contraseña" required>
+                          </div>
+                      </div>
+                      <div class="boton">
+                          <button class= "button-wa" type="submit">Ingresar</button>
+                      </div>
+                      <div class="botones">
+                          <button class="olvido" type="submit">¿Has olvidado tu contraseña?</button>
+                          <h1 class="division">/</h1>
+                          <button class="crear" type="submit">Registrarse en el sitio</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </nav>
+  </header>
+
+  <!--Inicio de las Reservaciones-->
+  <main>
+    <div id="reserva-background">
+            <!--  Bienvenida  -->
+            <section id="reserva-bienvenida">
+                <div class="reserva-titulo">
+                    <h1>Eclat</h1>
+                </div>
+                <div id="reserva-content-1">
+                    <h2 style="margin-bottom: 10px;">Bienvenido</h2>
+                    <button type="button" id="btn-reserva">Realizar una Reserva</button>
+                </div>
+            </section>
+            <!--  Formulario  -->
+            <form id="reserva-form" style="display: none;">
+                <div class="reserva-titulo">
+                    <h1>Eclat</h1>
+                </div>
+                <div id="reserva-content-2">
+                    <p>¿Cuantas personas?</p>
+                    <div id="num-per">
+                        <div class="num-persona">1</div>
+                        <div class="num-persona">2</div>
+                        <div class="num-persona">3</div>
+                        <div class="num-persona">4 o más</div>
+                    </div>
+                </div>
+                <div class="reserva-content-3">
+                    <label for="fecha">Seleccione la fecha:</label>
+                    <div id="reserva-fecha">
+                        <input type="date" name="Fecha" id="fecha" class="input-reserva" required>
+                    </div>
+                </div>
+                <div class="reserva-content-3">
+                    <label for="hora">Seleccione la hora:</label>
+                    <div id="reserva-hora">
+                        <input type="time" name="Hora" id="hora" class="input-reserva" required>
+                    </div>
+                </div>
+                <div class="reserva-content-3">
+                    <label for="terminos">
+                        <input type="checkbox" name="Termino" id="terminos" required>
+                        Acepto los <a href="terminos.html" target="_blank">terminos y condiciones</a> 
+                    </label>
+                </div>
+                <div class="reserva-content-3">
+                    <button type="button" id="btn-reserva-2">Siguiente</button>
+                </div>
+                
+            </form>
+            <!--  Final  -->
+            <form id="reserva-final" style="display: none;">
+                <div class="reserva-titulo">
+                    <h1>Eclat</h1>
+                </div>
+                <div class="reserva-content-4">
+                    <div class="reserva-titulo-2">
+                        <h2>Personalizar tu experiencia</h2>
+                    </div>
+                    <div class="reserva-content-4-1">
+                        <label for="reserva-motivo">Motivo de la Reserva</label>
+                        <select name="motivosReserva" id="reserva-motivo">
+                        <option>Aniversario</option>
+                        <option>Cumpleaños</option>
+                        <option>Pedida de mano</option>
+                        <option>otro</option>
+                        <option>Ninguna</option>
+                        </select>
+                    </div>
+                    <div class="reserva-content-4-1">
+                        <label for="Mensaje">Envianos alguna petición especial:</label>
+                        <textarea name="mensaje" id="Mensaje"> </textarea> 
+                    </div>
+                    <div class="reserva-content-4-1">
+                        <p id="info">
+                            Por favor tenga en cuenta que la tolerancia es de 15 minutos y <br> 
+                            dispone de la mesa durante un máximo de 120 minutos desde la hora reservada,<br>
+                            independientemente de la hora de llegada.
+                            <br><br>
+                            No está permitido el ingreso de alimentos (tortas, bocaditos, etc.) ni mascotas.
+                            <br><br>
+                            Para la última reserva, el personal presentará la cuenta a las 21:55 h (domingos a las 18:55 h) 
+                            para poder cumplir con el horario de cierre de atención.
+                        </p>
+                    </div>
+                    <section id="reserva-resumen">
+                        <h3>Resumen de la Reserva:</h3>
+                        <p><strong>Personas:</strong> <span id="resumen-personas">-</span></p>
+                        <p><strong>Fecha:</strong> <span id="resumen-fecha">-</span></p>
+                        <p><strong>Hora:</strong> <span id="resumen-hora">-</span></p>
+                    </section>
+                    <div class="reserva-content-4-1">
+                        <input type="submit" value="Confirmar" onclick="mostrarConfirm()">
+                    </div>
+                </div>
+            </form>
+    </div>
+    <div id="ir-arriba">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" viewBox="0 0 24 24">
+        <path d="M12 2L5 9h4v9h6V9h4z"/>
+      </svg>
+    </div>
+</main>
+    <!-- FOOTER ---->
+    <footer>
+      <div class="footer-content">
+          <p>&copy; 2025 Restaurante Éclat. Todos los derechos reservados.</p>
+      </div>
+  </footer>
+
+    <script src="../js/reserva-acciones.js"></script>
+    <script src="../js/modal-mostrar.js"></script>
+    <script src="../js/ir-arriba.js"></script>
+</body>
+</html>
